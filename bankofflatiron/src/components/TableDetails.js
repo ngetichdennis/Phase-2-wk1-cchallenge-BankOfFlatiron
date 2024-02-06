@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 function TableDetails({onAddTransaction}){
+    //useState hook for the form data
     const [formData,setFormData]=useState({
         date:"",
         description:"",

@@ -1,5 +1,6 @@
 import React from "react";
 function Table({ transactions }) {
+  //the table format
   return (
     <table>
       <thead>
