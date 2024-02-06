@@ -30,6 +30,10 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
+  cursor: pointer;
+}
+input:hover{
+  background-color:#f3f3f3;
 }
 
 button {

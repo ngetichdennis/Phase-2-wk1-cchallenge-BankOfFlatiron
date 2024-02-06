@@ -27,8 +27,15 @@ function TableDetails({onAddTransaction}){
             category:"",
             amount: "",
           });
-  
-
+          fetch("http://localhost:8001/transactions",{
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json'
+                },
+                body:JSON.stringify(formData)
+                }).then((response)=> response.json())
+                .then((data)=>console.log(data))
+         
     }
     return(
         <form onSubmit={handleSubmit}>
